@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kingdom Rampart</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="game-wrapper">
+    <canvas id="game" width="960" height="540"></canvas>
+    <div class="hud">
+      <div class="hud__info">
+        <span id="gold">Gold: 0</span>
+        <span id="wave">Wave: 1</span>
+        <span id="base">Base ❤️: 5</span>
+      </div>
+      <div class="hud__buttons">
+        <button id="btn-left" class="hud__button">◀</button>
+        <button id="btn-right" class="hud__button">▶</button>
+        <button id="btn-build" class="hud__button hud__button--primary">Build 50⚜️</button>
+        <button id="btn-repair" class="hud__button">Repair 40⚜️</button>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="instructions">
+    <div class="overlay__panel">
+      <h1>Kingdom Rampart</h1>
+      <p>
+        Protect your keep from the nightly hordes! Move your monarch along the
+        kingdom road and build watchtowers to fend off enemies. Survive as many
+        waves as you can.
+      </p>
+      <ul>
+        <li>Tap ◀ / ▶ or use A / D or arrow keys to move.</li>
+        <li>Tap Build to place a tower at your position (costs 50 gold).</li>
+        <li>Tap Repair to restore a damaged tower (costs 40 gold).</li>
+        <li>Defeat enemies to earn more gold.</li>
+        <li>If enemies reach the keep, you lose a heart!</li>
+      </ul>
+      <button id="btn-start" class="overlay__start">Start Defending</button>
+    </div>
+  </div>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
